@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 
 public class Randomize : MonoBehaviour {
 	//publics
@@ -23,7 +24,6 @@ public class Randomize : MonoBehaviour {
 			}
 
 			point = (GameObject)Instantiate(Resources.Load("Prefabs/Point"), pos, Quaternion.identity);
-
 			points.Add(point);
 		}
 	}
